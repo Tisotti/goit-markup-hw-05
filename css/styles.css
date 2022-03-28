@@ -87,6 +87,21 @@ FFFFFF навигация ;*/
 /* подсветка активной страницы ??? */
 .nav-link.current {
   color: var(--accent-color);
+  position: relative;
+}
+
+.nav-link.current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  border-radius: 2px;
+
+  background-color: var(--accent-color);
 }
 
 /* навигация */
@@ -374,6 +389,41 @@ FFFFFF навигация ;*/
 
 img {
   display: block;
+}
+
+.disc-wrap {
+  position: relative;
+}
+
+.disc-wrap::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+
+  left: 0%;
+  bottom: 0;
+
+  width: 100%;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.disc-text {
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  transform: translate(-5%, -60%);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
 }
 
 /* секция наша команда */
@@ -884,5 +934,4 @@ footer {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  background: #000;
 }
