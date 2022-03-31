@@ -787,6 +787,7 @@ img {
 
 .project-link:hover .project-wrap::before,
 .project-link:focus .project-wrap::before {
+  transform: translateY(100%);
   opacity: 1;
 }
 
