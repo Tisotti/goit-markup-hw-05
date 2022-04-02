@@ -580,7 +580,6 @@ img {
 
   cursor: pointer;
 
-
   transition: border-color 250ms var(--cubic);
 }
 
@@ -599,15 +598,11 @@ img {
 
   color: currentColor;
   cursor: pointer;
-
-  
 }
 
 .clients-item:hover,
 .clients-item:focus {
   border-color: var(--accent-color);
-
-  
 }
 
 .clients-link:hover .clients-icon,
@@ -674,7 +669,9 @@ img {
   cursor: pointer;
   border-radius: 4px;
 
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic), 
+  color 250ms var(--cubic), 
+  box-shadow 250ms var(--cubic);
 }
 
 .filter-btn:hover,
@@ -724,6 +721,8 @@ img {
 
 .project-link {
   display: block;
+
+  transition: box-shadow 250ms var(--cubic);;
 }
 
 .project-link:hover,
