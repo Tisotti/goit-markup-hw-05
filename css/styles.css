@@ -771,7 +771,8 @@ background-color: rgb(23, 138, 232, 90%);
 opacity: 0;
 
 transform: translateY(100%);
-transition: transform 250ms var(--cubic);
+transition: transform 250ms var(--cubic),
+  opacity 250ms var(--cubic);
 }
 
 .product-action {
@@ -781,14 +782,10 @@ transition: transform 250ms var(--cubic);
   justify-content: center;
   align-items: center;
   
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 63px 24px;
 
-  width: 322px;
-  height: 168px;
-
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
 
   font-Size: 18px; 
   Line-height: 1.55;
@@ -797,10 +794,6 @@ transition: transform 250ms var(--cubic);
   color: var(--primary-white-color);
 
   opacity: 0;
-
-  transform: translate(-50%, -50%);
-  transition: transform 250ms var(--cubic);
-
 }
 
 .project-link:hover .product-overlay,
