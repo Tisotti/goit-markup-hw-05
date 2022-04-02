@@ -276,11 +276,13 @@ transition: fill 250ms var(--cubic);
 
   opacity: 1;
 
-  transition: opacity 250ms var(--cubic);
+  transition: opacity 250ms var(--cubic), 
+  transform 250ms var(--cubic);
 }
 
 .backdrobe.is-hidden {
   opacity: 0;
+  transform: scale(0);
   pointer-events: none;
 }
 
@@ -297,6 +299,7 @@ transition: fill 250ms var(--cubic);
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--primary-white-color);
+
 }
 
 .close {
