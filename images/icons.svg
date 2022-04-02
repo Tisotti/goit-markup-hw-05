@@ -1,5 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    <symbol id="close" viewBox="0 0 32 32">
+      <path
+        d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z" />
+    </symbol>
     <symbol id="diagram" viewBox="0 0 32 32">
       <path fill="#2196F3"
         d="M14.926 14.965h1.066v4.798h-1.066v-4.798zm4.264 2.132h1.066v2.665H19.19v-2.665zm-8.529 1.599h1.066v1.066h-1.066v-1.066zm-3.198-.533h1.066v1.599H7.463v-1.599z" />
