@@ -146,12 +146,16 @@ FFFFFF навигация ;*/
 .nav-icon {
   fill: #757575;
   margin-right: 10px;
+
+transition: fill 250ms var(--cubic);
 }
 
 .nav-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition: color 250ms var(--cubic);
 
 }
 
@@ -167,8 +171,7 @@ FFFFFF навигация ;*/
   fill: var(--accent-color);
 }
 
-.nav-mail,
-.nav-tel {
+.nav-contacts{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,20 +182,17 @@ FFFFFF навигация ;*/
   color: inherit;
   text-decoration: none;
 
+  transition: color 250ms var(--cubic);
+
 }
 
-.nav-mail:hover,
-.nav-mail:focus,
-.nav-tel:hover,
-.nav-tel:focus 
-{
+.nav-contacts:hover,
+.nav-contacts:focus{
   color: #2196f3;
 }
 
-.nav-mail:hover .nav-icon,
-.nav-mail:focus .nav-icon,
-.nav-tel:hover .nav-icon,
-.nav-tel:focus .nav-icon {
+.nav-contacts:hover .nav-icon,
+.nav-contacts:focus .nav-icon {
   fill: var(--accent-color);
 }
 
@@ -244,14 +244,20 @@ FFFFFF навигация ;*/
   font-size: 16px;
   line-height: 1.85;
   letter-spacing: 0.06em;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
+
   border-radius: 4px;
   border: none;
+
   min-width: 200px;
   text-align: center;
+
+  transition: background-color 250ms var(--cubic);
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
@@ -516,6 +522,14 @@ img {
 
   background-color: var(--primary-white-color);
   border-radius: 50%;
+
+  transition: background-color 250ms var(--cubic);
+  
+}
+
+.svg-icon {
+  transition: fill 250ms var(--cubic);
+  
 }
 
 .team-link-icon:hover,
@@ -565,7 +579,11 @@ img {
   border-radius: 4px;
 
   cursor: pointer;
+
+
+  transition: border-color 250ms var(--cubic);
 }
+
 .clients-item:last-child {
   margin-right: 0;
 }
@@ -581,11 +599,15 @@ img {
 
   color: currentColor;
   cursor: pointer;
+
+  
 }
 
 .clients-item:hover,
 .clients-item:focus {
   border-color: var(--accent-color);
+
+  
 }
 
 .clients-link:hover .clients-icon,
@@ -597,6 +619,8 @@ img {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
+
+  transition: fill 250ms var(--cubic);
 }
 
 /* заголовки h2 */
@@ -649,6 +673,8 @@ img {
   background-color: #F5F4FA;
   cursor: pointer;
   border-radius: 4px;
+
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .filter-btn:hover,
@@ -833,12 +859,17 @@ footer {
   display: block;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms var(--cubic);
 }
 
 .footer-maps {
   display: block;
   color: var(--primary-white-color);
+
+  transition: color 250ms var(--cubic);
 }
+
 .footer-maps:hover,
 .footer-maps:focus {
   color: var(--accent-color);
@@ -895,6 +926,8 @@ footer {
   background-color: rgb(255, 255, 255, 10%);
   background-repeat: no-repeat;
   background-position: center;
+
+  transition: background-color 250ms var(--cubic);
 }
 
 .footer-link-icon:hover,
